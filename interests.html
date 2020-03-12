@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+</style>
+<div class="a">
+<h1> Interests </h1>
+</div>
+<link rel="stylesheet" type"text/css" href="style.css">
+<div class="topnav">
+ <a href="index.html">Home</a>
+ <a href="cv.html">Curriculum Vitae</a>
+ <a href="contact.html">Contact</a>
+ <a href="consulting.html">Consulting</a>
+ <a href="aboutconsulting.html">About Consulting </a>
+ </div>
+ 
+ <style>
+div.a{
+text-align: center;
+}
+ </style>
+  <center>
+ <h2>Sport</h2>
+ </head>
+ <p style="font-size:100%;">
+ <body style="background-color:#ccffff;">
+I have won two Leinster Schools Junior Leagues as well as a Senior League with my secondary school Newbridge
+<br/>
+College at a high level of rugby over the years which has really helped and developed my teamwork skills from a
+<br/>
+very young age. I have also won county titles in Gaelic football with my local GAA club Athgarvan. I also
+<br/>
+play golf at my local golf club The Royal Curragh Golf Club. I mostly play in summer and play off a handicap
+<br/>
+of 14. I have won many tournaments over the years and have represented my county for Pitch & Putt twice.
+<br/>
+I enjoy pushing myself physcially and mentally to become the best player I can be in all sports and for this
+<br/>
+reason I also go to the gym regularly. Since joining UCC last September I have joined the Fresher football team
+<br/>
+where I train regularly and compete in competitions with them.
+</p>
+
+<h2>Travel</h2>
+<p style="font-size:100%;">
+<body style="background-color:#ccffff;">
+Travelling is one of the many things I am passionate about. I love travelling to all parts of the world.
+<br/>
+I have been to many different countries for different reasons. I go skiing regularly with my family and also
+<br/>
+have been on summer holidays with them where we would visit small towns in countries like Spain, France and
+<br/>
+Italy. I've visited famous cities such as Paris, Rome and Barcelona and plan on visiting more. For this
+<br/>
+reason I would be willing to travel for work and believe I would be an asset to your company
+</p>
+
+
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="atown.png" style="width:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="bridge.png" style="width:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="skiing.png" style="width:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="golf.png" style="width:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="rome.png" style="width:70%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="paris.png" style="width:70%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ 
+	  
+<script> var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    </div>
+  </div>
+</div>
